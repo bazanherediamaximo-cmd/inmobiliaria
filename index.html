@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Premium | Córdoba</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-header fade-in">
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i> PRISMA <span>ESTATE</span>
+        </div>
+        <a href="#contacto" class="btn-primary">Tasar mi propiedad</a>
+    </header>
+
+    <section class="hero fade-in">
+        <div class="hero-bg"></div>
+        <h1>Tu próximo nivel<br>de vida.</h1>
+        <p>Propiedades exclusivas en Córdoba, Villa Allende y Zona Norte.</p>
+
+        <div class="search-glass">
+            <div class="search-group">
+                <i class="fa-solid fa-tag"></i>
+                <select class="search-select" id="operacion">
+                    <option value="" disabled selected>Operación</option>
+                    <option value="venta">Comprar</option>
+                    <option value="alquiler">Alquilar</option>
+                </select>
+            </div>
+            <div class="divider"></div>
+            <div class="search-group">
+                <i class="fa-solid fa-house"></i>
+                <select class="search-select" id="tipo">
+                    <option value="" disabled selected>Tipo</option>
+                    <option value="casa">Casa</option>
+                    <option value="depto">Departamento</option>
+                </select>
+            </div>
+            <div class="divider"></div>
+            <div class="search-group input-group">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" class="search-input" id="ubicacion" placeholder="Zona (Ej: Nueva Córdoba)">
+            </div>
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Destacados del mes</h2>
+        </div>
+
+        <div class="grid">
+            <div class="property-card fade-in open-modal-btn" data-id="1">
+                <span class="status-badge venta">Venta</span>
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071" alt="Casa Lujosa" class="card-img">
+                    <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <div class="price-row">
+                        <span class="price">USD 450.000</span>
+                    </div>
+                    <span class="location"><i class="fa-solid fa-map-pin"></i> Country Jockey Club</span>
+                    <div class="amenities">
+                        <span><i class="fa-solid fa-bed"></i> 4 Dorm</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baños</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 320m²</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property-card fade-in open-modal-btn" data-id="2">
+                <span class="status-badge alquiler">Alquiler</span>
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070" alt="Casa Moderna" class="card-img">
+                    <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <div class="price-row">
+                        <span class="price">USD 1.200 <small>/mes</small></span>
+                    </div>
+                    <span class="location"><i class="fa-solid fa-map-pin"></i> Villa Allende Golf</span>
+                    <div class="amenities">
+                        <span><i class="fa-solid fa-bed"></i> 3 Dorm</span>
+                        <span><i class="fa-solid fa-bath"></i> 2 Baños</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 210m²</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property-card fade-in open-modal-btn" data-id="3">
+                <span class="status-badge oportunidad">Oportunidad</span>
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053" alt="Mansion" class="card-img">
+                    <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <div class="price-row">
+                        <span class="price">USD 890.000</span>
+                    </div>
+                    <span class="location"><i class="fa-solid fa-map-pin"></i> Valle Escondido</span>
+                    <div class="amenities">
+                        <span><i class="fa-solid fa-bed"></i> 5 Dorm</span>
+                        <span><i class="fa-solid fa-bath"></i> 5 Baños</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 550m²</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-glass fade-in">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>PRISMA ESTATE</h3>
+                <p>Innovación inmobiliaria en Córdoba Capital.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📍 Av. Rafael Núñez 4500</p>
+            </div>
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prisma Estate. Design by Matxi.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/543512752607" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div class="nav-container">
+        <nav class="dynamic-island-nav">
+            <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="nav-item"><i class="fa-regular fa-heart"></i></a>
+            <a href="#" class="nav-item"><i class="fa-regular fa-user"></i></a>
+        </nav>
+    </div>
+
+    <div class="modal-overlay" id="propertyModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <img src="" alt="Detalle" class="modal-img" id="modalImg">
+            
+            <div class="modal-header">
+                <span class="status-badge" id="modalBadge" style="position:relative; top:0; right:0; margin-bottom:10px; display:inline-block;">Venta</span>
+                <h2 id="modalTitle">Título</h2>
+                <span class="price" id="modalPrice">USD 0</span>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-specs">
+                    <span><i class="fa-solid fa-bed"></i> <b id="modalBeds">0</b></span>
+                    <span><i class="fa-solid fa-bath"></i> <b id="modalBaths">0</b></span>
+                    <span><i class="fa-solid fa-ruler-combined"></i> <b id="modalArea">0</b> m²</span>
+                </div>
+                <p class="modal-desc" id="modalDesc">Descripción...</p>
+                <a href="#" class="btn-whatsapp-modal">
+                    <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
