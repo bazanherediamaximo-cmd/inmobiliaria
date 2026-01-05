@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inmobiliaria demo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <section class="hero fade-in">
+            <div class="hero-bg"></div>
+            <h1>Tu próximo nivel<br>de vida.</h1>
+            <p>Propiedades exclusivas en Córdoba, Buenos Aires y la Costa</p>
+
+            <div class="search-glass">
+                <input type="text" class="search-input" placeholder="¿Qué estás buscando? (Ej: Casa en Tigre)">
+                <button class="search-btn">Buscar</button>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2 class="section-title fade-in">Destacados del mes</h2>
+
+            <div class="grid">
+                <div class="property-card fade-in">
+                    <span class="status-badge">Venta</span>
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop" alt="Casa Lujosa" class="card-img">
+                    <div class="card-info">
+                        <span class="price">USD 450.000</span>
+                        <span class="location">📍 Country Jockey Club, Córdoba</span>
+                    </div>
+                </div>
+
+                <div class="property-card fade-in">
+                    <span class="status-badge">Alquiler</span>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Casa Moderna" class="card-img">
+                    <div class="card-info">
+                        <span class="price">USD 1.200 /mes</span>
+                        <span class="location">📍 Villa Allende, Córdoba</span>
+                    </div>
+                </div>
+
+                <div class="property-card fade-in">
+                    <span class="status-badge">Oportunidad - Venta</span>
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop" alt="Mansion" class="card-img">
+                    <div class="card-info">
+                        <span class="price">USD 890.000</span>
+                        <span class="location">📍 Nordelta, Buenos Aires</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="nav-container">
+            <nav class="dynamic-island-nav">
+                <a href="#" class="nav-item active">🏠</a>
+                <a href="#" class="nav-item">❤️</a>
+                <a href="#" class="nav-item">🔍</a>
+                <a href="#" class="nav-item">👤</a>
+            </nav>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
